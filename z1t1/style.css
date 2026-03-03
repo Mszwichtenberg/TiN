@@ -1,0 +1,43 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+
+    background: url("photos/zad2t2.webp") center/cover no-repeat fixed;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgba(723,80,160,0.45);
+    overflow-y:auto ;
+}
+
+body > *:not(.menu) {
+    width: 900px;
+    margin-left: calc(220px + (100% - 220px - 900px) / 2);
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body > *:not(.menu) {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    background: rgba(120, 170, 230, 0.95);
+    padding: 30px;
+}
+.menu a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+}
