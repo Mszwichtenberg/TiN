@@ -1,43 +1,134 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url("photos/zad2t2.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+.strona {
+    width: 1100px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
 
-    background: url("photos/zad2t2.webp") center/cover no-repeat fixed;
+.menu-box {
+    width: 220px;
+    background-color: darkred;
+    opacity: 0.9;
+    background-image: url("photos/zad2t2.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.tresc {
+    width: 880px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+    padding: 25px;
 }
 
 .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 100vh;
+    list-style: none;
     margin: 0;
     padding: 0;
-    background: rgba(723,80,160,0.45);
-    overflow-y:auto ;
 }
 
-body > *:not(.menu) {
-    width: 900px;
-    margin-left: calc(220px + (100% - 220px - 900px) / 2);
-}
-html, body {
-    height: 100%;
-    overflow: hidden;
+.menu li {
+    list-style: none;
 }
 
-body > *:not(.menu) {
-    max-height: 100vh;
-    overflow-y: auto;
-
-    background: rgba(120, 170, 230, 0.95);
-    padding: 30px;
-}
-.menu a {
+.menu > li > a {
     display: block;
-    padding: 10px 12px;
+    background-color: darkred;
+    color: white;
     text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid crimson;
+    font-weight: bold;
+}
+
+.podmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.podmenu a {
+    display: block;
+    background-color: indianred;
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px 8px 22px;
+    border-bottom: 1px solid firebrick;
+}
+
+.menu a:hover,
+.podmenu a:hover {
+    background-color: crimson;
+}
+
+h1 {
+    font-size: 52px;
+    color: darkred;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 34px;
+    color: black;
+    margin-top: 30px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+img {
+    width: 150px;
+    margin: 20px 0;
+    display: block;
+}
+
+.tabelka {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabelka th {
+    background-color: darkred;
+    color: white;
+    padding: 12px;
+    border: 1px solid crimson;
+}
+
+.tabelka td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.tabelka tbody tr:nth-child(even) td {
+    background-color: mistyrose;
+}
+
+.stopka {
+    margin-top: 30px;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.stopka p {
+    margin: 8px 0;
 }
