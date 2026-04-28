@@ -1,0 +1,43 @@
+body {
+    background: white;
+    font-family: Arial;
+    margin: 20px;
+}
+
+
+.student {
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+
+.student-header {
+    background: lightgray;
+    padding: 10px;
+    font-size: 22px;
+    border-bottom: 2px solid black;
+}
+
+.student-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.student-body ul {
+    list-style: disc;
+}
+
+.srednia {
+    font-size: 24px;
+    color: red;
+}
+
+.ukryty {
+    display: none;
+}
+
+.pokazany {
+    display: flex;
+}
