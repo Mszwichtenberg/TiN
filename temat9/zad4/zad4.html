@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Galeria zdjec</h1>
+
+<div class="galeria">
+  <img src="photos/zad2t2.webp" alt="Zdjecie 1" onclick="otworzLightbox(this.src)">
+  <img src="photos/zad2t2.webp" alt="Zdjecie 2" onclick="otworzLightbox(this.src)">
+  <img src="photos/zad2t2.webp" alt="Zdjecie 3" onclick="otworzLightbox(this.src)">
+  <img src="photos/zad2t2.webp" alt="Zdjecie 4" onclick="otworzLightbox(this.src)">
+</div>
+
+<div id="lightbox" onclick="zamknijLightbox()">
+  <span id="zamknij">X</span>
+  <img id="duzeZdjecie" src="" alt="Duże zdjecie">
+</div>
+
+<script src="zad4.js"></script>
+</body>
+</html>

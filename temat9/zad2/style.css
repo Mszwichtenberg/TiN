@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: gray;
+    font-family: Arial;
+}
+
+.kalkulator {
+    width: 650px;
+    margin: 80px auto;
+    background-color: white;
+    border: 2px solid darkred;
+}
+
+#wynik {
+    height: 110px;
+    background-color: black;
+    color: red;
+    font-size: 46px;
+    text-align: right;
+    padding: 25px 20px;
+    border-bottom: 3px solid darkred;
+}
+
+.panel {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    padding: 45px 25px;
+}
+
+.pole {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: black;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 130px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+button {
+    height: 70px;
+    padding: 0 25px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+<div class="kalkulator">
+
+  <div id="wynik">0</div>
+
+  <div class="panel">
+    <div class="pole">
+      <label for="a">Pierwsza liczba</label>
+      <input id="a" type="number" value="5">
+    </div>
+
+    <div class="pole">
+      <label for="b">Druga liczba</label>
+      <input id="b" type="number" value="8">
+    </div>
+
+    <div class="pole">
+      <label for="dzialanie">Działanie</label>
+      <select id="dzialanie">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*" selected>*</option>
+        <option value="/">/</option>
+      </select>
+    </div>
+
+    <button onclick="oblicz()">Oblicz</button>
+  </div>
+
+</div>
+<script src="zad2.js"></script>
+
+</body>
+</html>
